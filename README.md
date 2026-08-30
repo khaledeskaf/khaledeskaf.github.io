@@ -1,46 +1,48 @@
-# Prof. Dr. Khaled Eskaf — Personal Academic Website
+# Prof. Dr. Khaled Eskaf — Official Academic Website
 
-A zero-build static website designed for GitHub Pages.
+Official personal academic website of **Prof. Dr. Khaled Eskaf**, Professor of Intelligent Systems, Dean of the College of Informatics at Midocean University, and Founder & CEO of Canadian Intelligent Technology (CiTech).
 
-## Files
+Live site: https://khaledeskaf.github.io/
 
-- `index.html` — complete page content and SEO metadata
-- `styles.css` — responsive visual design
-- `script.js` — mobile navigation, reveal animation, footer year
-- `.nojekyll` — tells GitHub Pages to serve the files directly
+## Main themes
 
-## Publish on the existing `khaledeskaf` account
+- Academic leadership and quality assurance
+- Artificial Intelligence and Machine Learning
+- Robotics and Autonomous Systems
+- Computer Vision and Embedded Intelligence
+- Intelligent Healthcare
+- Teaching, supervision and technology-enhanced education
+- Applied innovation through CiTech
+- International academic and professional collaboration
 
-For a **user GitHub Pages site**, the repository must be named exactly:
+## Site files
 
-`khaledeskaf.github.io`
+- `index.html` — homepage content, metadata and structured data
+- `styles.css` — original core visual design **(keep the existing file in GitHub)**
+- `v2.css` — V2 accessibility, sticky navigation, CiTech and collaboration refinements
+- `script.js` — navigation, safe reveal animations and accessibility behavior
+- `khaled-eskaf.jpg` — professional portrait
+- `favicon.svg` — site icon
+- `site.webmanifest` — web app metadata
+- `robots.txt` — search-engine crawling rules
+- `sitemap.xml` — sitemap for search engines
+- `404.html` — custom page-not-found page
+- `.nojekyll` — direct GitHub Pages serving
 
-Upload these files to the root of the repository and publish from the `main` branch.  
-The default address will be:
+## Important profile links
 
-`https://khaledeskaf.github.io`
+- LinkedIn: https://ca.linkedin.com/in/keskaf
+- GitHub: https://github.com/khaledeskaf
+- Google Scholar: https://scholar.google.com/citations?user=TeE2zCUAAAAJ&hl=en
+- DBLP: https://dblp.org/pid/298/9044
+- ResearchGate: https://www.researchgate.net/profile/Khaled-Eskaf
+- Midocean University: https://midocean-ae.midocean.university/en/management-staff/
+- CiTech Canada: https://www.linkedin.com/company/citech-canada/
+- University of Washington Remote Hub Lab: https://rhlab.ece.uw.edu/people-2/
+- CAIAC: https://www.caiac.ca/en/expert-profile/1240
+- MakeX: https://spark.makex.io/2025-makex-spark-online-competition-global-match/
+- MDPI Sensors Special Issue: https://www.mdpi.com/journal/sensors/special_issues/6LET91LY54
 
-## If you want `https://khaledeskaf.github.io`
+## Maintenance note
 
-GitHub's default user-site URL follows the GitHub account name.  
-To get exactly `khaledeskaf.github.io`, the GitHub username/account must be `khaledeskaf`, and the repository must be:
-
-`khaledeskaf.github.io`
-
-## Portrait
-
-The website now uses the optimized professional portrait in `assets/khaled-eskaf.jpg`.
-
-For the final version, replace the portrait URL in `index.html` with a high-resolution professional portrait, ideally:
-- vertical crop
-- clean/dark or neutral background
-- at least 1200px tall
-- formal but natural expression
-
-## Recommended next refinements
-
-1. Replace the GitHub avatar with the final professional portrait.
-2. Add a verified public contact email only if you want it visible online.
-3. Add direct Google Scholar / ORCID links after confirming the preferred profiles.
-4. Add an Arabic version after the English visual identity is approved.
-5. Add project images and event photography once selected.
+Research metrics are time-sensitive. The website currently labels Google Scholar citations and h-index as a **July 2026 snapshot**. Update those values only after checking the live Google Scholar profile.

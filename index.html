@@ -4,58 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#07131f" />
-  <meta name="description" content="Official academic website of Prof. Dr. Khaled Eskaf — Professor, Dean, researcher and academic leader in Artificial Intelligence, Robotics and Intelligent Systems." />
+  <meta name="description" content="Official website of Prof. Dr. Khaled Eskaf — Professor and Dean at Midocean University, Founder & CEO of CiTech, and researcher in AI, robotics and intelligent systems." />
   <meta name="keywords" content="Khaled Eskaf, Artificial Intelligence, Robotics, Intelligent Systems, Academic Leadership, Computer Vision, Machine Learning, Midocean University" />
   <meta name="author" content="Prof. Dr. Khaled Eskaf" />
+  <link rel="canonical" href="https://khaledeskaf.github.io/" />
 
   <meta property="og:title" content="Prof. Dr. Khaled Eskaf | Academic Leadership, AI & Intelligent Systems" />
   <meta property="og:description" content="Professor, Dean and researcher advancing AI, robotics, intelligent systems and technology-enhanced education." />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://khaledeskaf.github.io/" />
+  <meta property="og:site_name" content="Prof. Dr. Khaled Eskaf" />
   <meta property="og:image" content="https://khaledeskaf.github.io/khaled-eskaf.jpg" />
+  <meta property="og:image:alt" content="Prof. Dr. Khaled Eskaf" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prof. Dr. Khaled Eskaf | Academic Leadership, AI & Intelligent Systems" />
+  <meta name="twitter:description" content="Professor, Dean, Founder & CEO of CiTech, and researcher in AI, robotics and intelligent systems." />
+  <meta name="twitter:image" content="https://khaledeskaf.github.io/khaled-eskaf.jpg" />
 
   <title>Prof. Dr. Khaled Eskaf | AI, Robotics & Academic Leadership</title>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <script>document.documentElement.classList.add("js");</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="v2.css" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Khaled Eskaf",
-    "honorificPrefix": "Prof. Dr.",
-    "jobTitle": "Professor and Dean of the College of Informatics",
-    "worksFor": {
-      "@type": "CollegeOrUniversity",
-      "name": "Midocean University"
-    },
-    "alumniOf": [
-      {"@type":"CollegeOrUniversity","name":"University of Salford"},
-      {"@type":"CollegeOrUniversity","name":"Arab Academy for Science, Technology and Maritime Transport"}
-    ],
-    "knowsAbout": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Robotics",
-      "Intelligent Systems",
-      "Computer Vision",
-      "Embedded Systems",
-      "Academic Leadership"
-    ],
-    "sameAs": [
-      "https://ca.linkedin.com/in/keskaf",
-      "https://github.com/khaledeskaf",
-      "https://dblp.org/pid/298/9044"
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://khaledeskaf.github.io/#profile",
+        "url": "https://khaledeskaf.github.io/",
+        "name": "Prof. Dr. Khaled Eskaf",
+        "mainEntity": {"@id": "https://khaledeskaf.github.io/#person"}
+      },
+      {
+        "@type": "Person",
+        "@id": "https://khaledeskaf.github.io/#person",
+        "name": "Khaled Eskaf",
+        "honorificPrefix": "Prof. Dr.",
+        "url": "https://khaledeskaf.github.io/",
+        "image": "https://khaledeskaf.github.io/khaled-eskaf.jpg",
+        "jobTitle": [
+          "Professor of Intelligent Systems",
+          "Dean of the College of Informatics",
+          "Founder and CEO of Canadian Intelligent Technology (CiTech)"
+        ],
+        "worksFor": {
+          "@type": "CollegeOrUniversity",
+          "name": "Midocean University",
+          "url": "https://midocean-ae.midocean.university/"
+        },
+        "affiliation": [
+          {
+            "@type": "Organization",
+            "name": "Canadian Intelligent Technology (CiTech)",
+            "url": "https://www.linkedin.com/company/citech-canada/"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Washington Remote Hub Lab",
+            "url": "https://rhlab.ece.uw.edu/people-2/"
+          }
+        ],
+        "alumniOf": [
+          {"@type":"CollegeOrUniversity","name":"University of Salford"},
+          {"@type":"CollegeOrUniversity","name":"Arab Academy for Science, Technology and Maritime Transport"}
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Deep Learning",
+          "Robotics",
+          "Autonomous Systems",
+          "Intelligent Systems",
+          "Computer Vision",
+          "Embedded Systems",
+          "Intelligent Healthcare",
+          "Academic Leadership"
+        ],
+        "sameAs": [
+          "https://ca.linkedin.com/in/keskaf",
+          "https://github.com/khaledeskaf",
+          "https://scholar.google.com/citations?user=TeE2zCUAAAAJ&hl=en",
+          "https://dblp.org/pid/298/9044",
+          "https://www.researchgate.net/profile/Khaled-Eskaf",
+          "https://www.caiac.ca/en/expert-profile/1240"
+        ]
+      }
     ]
   }
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
+  <header class="site-header" id="siteHeader">
     <a href="#top" class="brand" aria-label="Khaled Eskaf home">
       <span class="brand-mark">KE</span>
       <span class="brand-copy">
@@ -72,20 +124,21 @@
       <a href="#contact" class="nav-cta">Connect</a>
     </nav>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span>
     </button>
   </header>
 
-  <div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <a href="#about">About</a>
     <a href="#research">Research</a>
     <a href="#journey">Journey</a>
     <a href="#publications">Publications</a>
     <a href="#contact">Connect</a>
   </div>
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="orb orb-one" aria-hidden="true"></div>
@@ -98,6 +151,14 @@
           <span>Khaled Eskaf</span>
         </h1>
         <p class="hero-role">Professor of Intelligent Systems · Dean of the College of Informatics</p>
+        <div class="hero-affiliations">
+          <a href="https://midocean-ae.midocean.university/en/management-staff/" target="_blank" rel="noopener noreferrer">
+            Midocean University ↗
+          </a>
+          <a href="https://www.linkedin.com/company/citech-canada/" target="_blank" rel="noopener noreferrer">
+            Founder & CEO · Canadian Intelligent Technology (CiTech) ↗
+          </a>
+        </div>
         <p class="hero-statement">
           Advancing intelligent systems through <strong>research</strong>,
           <strong>academic leadership</strong>, and technology that extends
@@ -105,7 +166,7 @@
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#research">
+          <a class="button button-primary" href="#impact">
             Explore my work
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
@@ -113,9 +174,10 @@
         </div>
 
         <div class="hero-links">
-          <a href="https://ca.linkedin.com/in/keskaf" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://dblp.org/pid/298/9044" target="_blank" rel="noreferrer">DBLP ↗</a>
-          <a href="https://github.com/khaledeskaf" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://ca.linkedin.com/in/keskaf" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://scholar.google.com/citations?user=TeE2zCUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+          <a href="https://dblp.org/pid/298/9044" target="_blank" rel="noopener noreferrer">DBLP ↗</a>
+          <a href="https://github.com/khaledeskaf" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
 
@@ -128,6 +190,10 @@
               src="khaled-eskaf.jpg"
               alt="Prof. Dr. Khaled Eskaf"
               class="portrait"
+              width="1200"
+              height="1200"
+              fetchpriority="high"
+              decoding="async"
             />
             <div class="portrait-shade"></div>
             <div class="portrait-label">
@@ -203,16 +269,21 @@
             real-world problems.
           </p>
 
-          <div class="credential-row">
+          <div class="credential-row credential-row-v2">
             <div>
-              <small>CURRENT ROLE</small>
+              <small>CURRENT ACADEMIC ROLE</small>
               <strong>Professor & Dean</strong>
-              <span>Midocean University</span>
+              <span>Midocean University · College of Informatics</span>
+            </div>
+            <div>
+              <small>TECHNOLOGY LEADERSHIP</small>
+              <strong>Founder & CEO</strong>
+              <span>Canadian Intelligent Technology (CiTech) · 2019–Present</span>
             </div>
             <div>
               <small>DOCTORATE</small>
               <strong>PhD, Computer Engineering & Science</strong>
-              <span>University of Salford, United Kingdom</span>
+              <span>University of Salford, United Kingdom · 2011</span>
             </div>
           </div>
         </div>
@@ -282,7 +353,7 @@
       </div>
     </section>
 
-    <section class="selected-work section-shell">
+    <section class="selected-work section-shell" id="impact">
       <div class="section-heading reveal">
         <p class="section-kicker">03 · SELECTED IMPACT</p>
         <h2>Ideas translated into <em>working systems.</em></h2>
@@ -298,7 +369,7 @@
             <p class="project-type">AI · COMPUTER VISION · AGRITECH</p>
             <h3>Smart Date</h3>
             <p>AI-driven precision sorting and quality control for date fruits, connecting intelligent vision with an applied agricultural challenge.</p>
-            <a href="https://doi.org/10.1109/HONET63146.2024.10822938" target="_blank" rel="noreferrer">View publication ↗</a>
+            <a href="https://doi.org/10.1109/HONET63146.2024.10822938" target="_blank" rel="noopener noreferrer">View publication ↗</a>
           </div>
           <div class="project-visual date-visual" aria-hidden="true">
             <div class="scan-line"></div>
@@ -313,7 +384,7 @@
             <p class="project-type">AI · HEALTHCARE · PREDICTION</p>
             <h3>Blood Glucose Prediction</h3>
             <p>Intelligent prediction of blood glucose levels using neural networks, deep learning and genetic algorithms.</p>
-            <a href="https://doi.org/10.71335/5y36na30" target="_blank" rel="noreferrer">View research ↗</a>
+            <a href="https://doi.org/10.71335/5y36na30" target="_blank" rel="noopener noreferrer">View research ↗</a>
           </div>
           <div class="project-line-art heartbeat" aria-hidden="true"></div>
         </article>
@@ -334,7 +405,7 @@
             <p class="project-type">MOBILE AI · HUMAN SAFETY</p>
             <h3>Intelligent Fall Detection</h3>
             <p>Mobile intelligent systems designed to recognize falls and support practical safety monitoring.</p>
-            <a href="https://doi.org/10.1109/ICCTA52020.2020.9477681" target="_blank" rel="noreferrer">View publication ↗</a>
+            <a href="https://doi.org/10.1109/ICCTA52020.2020.9477681" target="_blank" rel="noopener noreferrer">View publication ↗</a>
           </div>
           <div class="project-line-art mobile" aria-hidden="true"></div>
         </article>
@@ -353,29 +424,49 @@
             <div class="timeline-year">2024—NOW</div>
             <div class="timeline-line"><i></i></div>
             <div class="timeline-content">
-              <p>PROFESSOR & DEAN</p>
+              <p>PROFESSOR & DEAN · PROMOTED TO PROFESSOR IN 2025</p>
               <h3>Midocean University</h3>
-              <span>College of Informatics · AI, Robotics & Cybersecurity</span>
+              <span>College of Informatics · AI, Robotics & Cybersecurity · Curriculum, faculty, research & quality leadership</span>
             </div>
           </article>
 
           <article class="timeline-item reveal">
-            <div class="timeline-year">2019—NOW</div>
+            <div class="timeline-year">2018—2023</div>
             <div class="timeline-line"><i></i></div>
             <div class="timeline-content">
-              <p>FOUNDER & CEO</p>
-              <h3>Canadian Intelligent Technology</h3>
-              <span>Applied AI, intelligent technology and STEM education · Canada</span>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-year">2011—2023</div>
-            <div class="timeline-line"><i></i></div>
-            <div class="timeline-content">
-              <p>ACADEMIC LEADERSHIP & FACULTY</p>
+              <p>ASSOCIATE PROFESSOR</p>
               <h3>AASTMT</h3>
-              <span>Department Head · Quality Assurance Leader · Associate Professor</span>
+              <span>College of Computing & Information Technology · Teaching, research, supervision & academic service</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2014—2018</div>
+            <div class="timeline-line"><i></i></div>
+            <div class="timeline-content">
+              <p>ACADEMIC LEADERSHIP</p>
+              <h3>Quality Assurance · Multimedia & Computer Graphics</h3>
+              <span>Head of Quality Assurance Unit (2014–2017) · Head of Multimedia & Computer Graphics Department (2017–2018)</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2011—2013</div>
+            <div class="timeline-line"><i></i></div>
+            <div class="timeline-content">
+              <p>HEAD · COMPUTER ENGINEERING</p>
+              <h3>AASTMT</h3>
+              <span>Academic and operational leadership · Curriculum development · Faculty development</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2004—2010</div>
+            <div class="timeline-line"><i></i></div>
+            <div class="timeline-content">
+              <p>LECTURER & EDUCATIONAL COORDINATOR</p>
+              <h3>AASTMT · Egypt</h3>
+              <span>Computer Engineering · Teaching, assessment, curriculum, mentoring & research</span>
             </div>
           </article>
 
@@ -385,18 +476,36 @@
             <div class="timeline-content">
               <p>LECTURER</p>
               <h3>AASTMT · Qatar Branch</h3>
-              <span>Computer Engineering · Teaching, advising & locally relevant projects</span>
+              <span>Six years of on-site university teaching · Student advising · Locally relevant engineering projects</span>
             </div>
           </article>
 
           <article class="timeline-item reveal">
-            <div class="timeline-year">2011</div>
+            <div class="timeline-year">1995—1998</div>
             <div class="timeline-line"><i></i></div>
             <div class="timeline-content">
-              <p>PHD · COMPUTER ENGINEERING & SCIENCE</p>
-              <h3>University of Salford</h3>
-              <span>United Kingdom · Scholarship recipient</span>
+              <p>GRADUATE TEACHING ASSISTANT</p>
+              <h3>AASTMT · Egypt</h3>
+              <span>Laboratories, tutorials, assessment and Computer Engineering student projects</span>
             </div>
+          </article>
+        </div>
+
+        <div class="education-grid reveal" aria-label="Education">
+          <article>
+            <small>2011 · UNITED KINGDOM</small>
+            <h3>PhD · Computer Engineering & Science</h3>
+            <p>University of Salford · Scholarship recipient · Intelligent techniques for blood-glucose prediction</p>
+          </article>
+          <article>
+            <small>2000 · EGYPT</small>
+            <h3>MSc · Computer Engineering</h3>
+            <p>AASTMT · GPA 3.71/4.00 · Excellent with Honours · Scholarship recipient</p>
+          </article>
+          <article>
+            <small>1995 · EGYPT</small>
+            <h3>BSc · Computer Engineering</h3>
+            <p>AASTMT · Excellent with Honours · Graduation project in artificial robotic systems</p>
           </article>
         </div>
       </div>
@@ -422,9 +531,49 @@
       </div>
     </section>
 
+    <section class="innovation section-shell" id="innovation">
+      <div class="innovation-card reveal">
+        <div class="innovation-copy">
+          <p class="section-kicker">06 · INNOVATION & ENTREPRENEURSHIP</p>
+          <h2>From academic knowledge to <em>applied intelligent technology.</em></h2>
+          <p>
+            In 2019, I founded Canadian Intelligent Technology (CiTech) in Canada to connect
+            Artificial Intelligence, robotics and intelligent technology with practical
+            consulting, organizational innovation and technology education.
+          </p>
+          <a class="button button-primary" href="https://www.linkedin.com/company/citech-canada/" target="_blank" rel="noopener noreferrer">
+            Explore CiTech ↗
+          </a>
+        </div>
+
+        <div class="innovation-grid">
+          <article>
+            <span>AI</span>
+            <strong>Intelligent Solutions</strong>
+            <p>AI consulting and intelligent-technology initiatives supporting innovation and operational improvement.</p>
+          </article>
+          <article>
+            <span>R</span>
+            <strong>Robotics & STEM</strong>
+            <p>Hands-on robotics programmes designed to turn technical foundations into working systems.</p>
+          </article>
+          <article>
+            <span>EDU</span>
+            <strong>Technology Education</strong>
+            <p>Robotics, Python and AI learning programmes for youth and university-level participants.</p>
+          </article>
+          <article>
+            <span>LAB</span>
+            <strong>Applied Innovation</strong>
+            <p>Connecting research, prototyping, education and real-world technology challenges.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="publications section-shell" id="publications">
       <div class="section-heading reveal">
-        <p class="section-kicker">06 · SELECTED PUBLICATIONS</p>
+        <p class="section-kicker">07 · SELECTED PUBLICATIONS</p>
         <h2>Research across AI, healthcare, vision and <em>intelligent systems.</em></h2>
       </div>
 
@@ -435,7 +584,7 @@
             <h3>An AI-based Model for Predicting Flight Delays to Enhance Air Traffic Operations</h3>
             <p>Midocean Journal · Al-Zahrani, M. & Eskaf, K.</p>
           </div>
-          <span class="pub-type">AI · AVIATION</span>
+          <a class="pub-link" href="https://doi.org/10.71335/9dpxe690" target="_blank" rel="noopener noreferrer" aria-label="Open flight delay publication">↗</a>
         </article>
 
         <article class="publication reveal">
@@ -444,7 +593,7 @@
             <h3>Smart Date: AI-Driven Precision Sorting and Quality Control in Date Fruits</h3>
             <p>IEEE HONET 2024</p>
           </div>
-          <a class="pub-link" href="https://doi.org/10.1109/HONET63146.2024.10822938" target="_blank" rel="noreferrer" aria-label="Open publication">↗</a>
+          <a class="pub-link" href="https://doi.org/10.1109/HONET63146.2024.10822938" target="_blank" rel="noopener noreferrer" aria-label="Open publication">↗</a>
         </article>
 
         <article class="publication reveal">
@@ -453,7 +602,7 @@
             <h3>Advanced AI Techniques for Real-Time Blood Glucose Prediction in Diabetics</h3>
             <p>Midocean Journal · Deep Learning & Genetic Algorithms</p>
           </div>
-          <a class="pub-link" href="https://doi.org/10.71335/5y36na30" target="_blank" rel="noreferrer" aria-label="Open publication">↗</a>
+          <a class="pub-link" href="https://doi.org/10.71335/5y36na30" target="_blank" rel="noopener noreferrer" aria-label="Open publication">↗</a>
         </article>
 
         <article class="publication reveal">
@@ -462,16 +611,16 @@
             <h3>An Intelligent Mobile App for Fall Detection</h3>
             <p>IEEE International Conference on Computer Theory and Applications</p>
           </div>
-          <a class="pub-link" href="https://doi.org/10.1109/ICCTA52020.2020.9477681" target="_blank" rel="noreferrer" aria-label="Open publication">↗</a>
+          <a class="pub-link" href="https://doi.org/10.1109/ICCTA52020.2020.9477681" target="_blank" rel="noopener noreferrer" aria-label="Open publication">↗</a>
         </article>
 
         <article class="publication reveal">
-          <span class="pub-year">2019</span>
+          <span class="pub-year">2019/20</span>
           <div>
             <h3>Multidimensional Frequency Estimation Using LU Decomposition Eigenvector-Based Algorithm</h3>
-            <p>Annals of Telecommunications</p>
+            <p>Annals of Telecommunications · Online 2019 · Vol. 75 (2020)</p>
           </div>
-          <a class="pub-link" href="https://doi.org/10.1007/s12243-019-00723-9" target="_blank" rel="noreferrer" aria-label="Open publication">↗</a>
+          <a class="pub-link" href="https://doi.org/10.1007/s12243-019-00723-9" target="_blank" rel="noopener noreferrer" aria-label="Open publication">↗</a>
         </article>
 
         <article class="publication reveal">
@@ -480,32 +629,52 @@
             <h3>Fuzzy Mobile Expert System for Academic Advising</h3>
             <p>IEEE Canadian Conference on Electrical and Computer Engineering</p>
           </div>
-          <a class="pub-link" href="https://doi.org/10.1109/CCECE.2017.7946846" target="_blank" rel="noreferrer" aria-label="Open publication">↗</a>
+          <a class="pub-link" href="https://doi.org/10.1109/CCECE.2017.7946846" target="_blank" rel="noopener noreferrer" aria-label="Open publication">↗</a>
         </article>
       </div>
 
       <div class="publications-footer reveal">
-        <p>Explore additional scholarly work and bibliography.</p>
-        <div>
-          <a class="button button-dark" href="https://dblp.org/pid/298/9044" target="_blank" rel="noreferrer">View DBLP profile ↗</a>
+        <p>Explore the broader research record across academic databases.</p>
+        <div class="profile-buttons">
+          <a class="button button-dark" href="https://scholar.google.com/citations?user=TeE2zCUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+          <a class="button button-dark button-secondary" href="https://dblp.org/pid/298/9044" target="_blank" rel="noopener noreferrer">DBLP ↗</a>
+          <a class="button button-dark button-secondary" href="https://www.researchgate.net/profile/Khaled-Eskaf" target="_blank" rel="noopener noreferrer">ResearchGate ↗</a>
         </div>
       </div>
     </section>
 
-    <section class="service">
+    <section class="service" id="collaboration">
       <div class="section-shell">
         <div class="service-head reveal">
-          <p class="section-kicker">07 · BEYOND THE CLASSROOM</p>
-          <h2>Mentoring, judging, editorial work and <em>global STEM engagement.</em></h2>
+          <p class="section-kicker">08 · GLOBAL ACADEMIC & PROFESSIONAL ENGAGEMENT</p>
+          <h2>Collaboration, editorial service, mentoring and <em>global STEM engagement.</em></h2>
         </div>
 
         <div class="service-grid">
-          <div class="service-item reveal"><span>MakeX</span><p>Professional Robotics Expert Judge</p></div>
-          <div class="service-item reveal"><span>CAIAC</span><p>Canadian Artificial Intelligence Association Member</p></div>
-          <div class="service-item reveal"><span>MDPI Sensors</span><p>Guest Editor · Autonomous Drone Perception & Path Planning</p></div>
-          <div class="service-item reveal"><span>IET</span><p>STEM Ambassador · United Kingdom</p></div>
-          <div class="service-item reveal"><span>Mila</span><p>AI Mentor · Québec Artificial Intelligence Institute</p></div>
-          <div class="service-item reveal"><span>CiTech</span><p>Founder & CEO · Canadian Intelligent Technology</p></div>
+          <a class="service-item reveal" href="https://rhlab.ece.uw.edu/people-2/" target="_blank" rel="noopener noreferrer">
+            <span>University of Washington</span>
+            <p>Collaborator · Remote Hub Lab · Midocean University</p>
+          </a>
+          <a class="service-item reveal" href="https://spark.makex.io/2025-makex-spark-online-competition-global-match/" target="_blank" rel="noopener noreferrer">
+            <span>MakeX Robotics</span>
+            <p>Professional Robotics Expert Judge · International competition judging</p>
+          </a>
+          <a class="service-item reveal" href="https://www.caiac.ca/en/expert-profile/1240" target="_blank" rel="noopener noreferrer">
+            <span>CAIAC</span>
+            <p>Member · Canadian Artificial Intelligence Association · 2021–Present</p>
+          </a>
+          <a class="service-item reveal" href="https://www.mdpi.com/journal/sensors/special_issues/6LET91LY54" target="_blank" rel="noopener noreferrer">
+            <span>MDPI Sensors</span>
+            <p>Guest Editor · Drone Autonomous Perception-Aware Path Planning · 2025–2026</p>
+          </a>
+          <a class="service-item reveal" href="https://mila.quebec/en/" target="_blank" rel="noopener noreferrer">
+            <span>Mila</span>
+            <p>AI Mentor · Québec Artificial Intelligence Institute · 2021–2022</p>
+          </a>
+          <div class="service-item reveal">
+            <span>IET · United Kingdom</span>
+            <p>STEM Ambassador · 2020–2024 · Supporting science, technology and engineering engagement</p>
+          </div>
         </div>
       </div>
     </section>
@@ -513,7 +682,7 @@
     <section class="contact section-shell" id="contact">
       <div class="contact-card reveal">
         <div class="contact-orb" aria-hidden="true"></div>
-        <p class="section-kicker">08 · CONNECT</p>
+        <p class="section-kicker">09 · CONNECT</p>
         <h2>Meaningful ideas begin<br>with a <em>conversation.</em></h2>
         <p>
           For academic collaboration, research, invited speaking, technology
@@ -521,8 +690,9 @@
         </p>
 
         <div class="contact-actions">
-          <a class="button button-primary" href="https://ca.linkedin.com/in/keskaf" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
-          <a class="button button-outline-light" href="https://github.com/khaledeskaf" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="button button-primary" href="https://ca.linkedin.com/in/keskaf" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+          <a class="button button-outline-light" href="https://midocean-ae.midocean.university/en/management-staff/" target="_blank" rel="noopener noreferrer">Midocean Profile ↗</a>
+          <a class="button button-outline-light" href="https://github.com/khaledeskaf" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
     </section>

@@ -1,0 +1,271 @@
+/* ==========================================================
+   Khaled Eskaf Academic Website — V2 refinements
+   Load AFTER styles.css.
+   ========================================================== */
+
+/* Accessibility / progressive enhancement */
+.skip-link{
+  position:fixed;left:18px;top:14px;z-index:1000;
+  transform:translateY(-160%);
+  padding:10px 14px;border-radius:10px;
+  background:#fff;color:#07131f;font:700 13px "Manrope",sans-serif;
+  box-shadow:0 8px 30px rgba(0,0,0,.18);
+  transition:transform .2s ease;
+}
+.skip-link:focus{transform:translateY(0)}
+
+a:focus-visible,button:focus-visible{
+  outline:3px solid #78d7cf;
+  outline-offset:4px;
+}
+
+section[id]{scroll-margin-top:92px}
+
+/* Content is visible by default if JS fails. */
+.reveal{opacity:1!important;transform:none!important}
+.js .reveal{
+  opacity:0!important;
+  transform:translateY(18px)!important;
+  transition:opacity .75s ease,transform .75s ease!important;
+}
+.js .reveal.visible{opacity:1!important;transform:none!important}
+
+/* Sticky navigation after leaving top */
+.site-header{
+  transition:height .28s ease,background .28s ease,box-shadow .28s ease,
+             backdrop-filter .28s ease,padding .28s ease;
+}
+.site-header.is-scrolled{
+  position:fixed;
+  height:78px;
+  background:rgba(7,19,31,.86);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 12px 40px rgba(0,0,0,.16);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* Hero affiliations */
+.hero-affiliations{
+  margin-top:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:5px;
+}
+.hero-affiliations a{
+  color:#8da2b1;
+  font:600 11px/1.5 "Manrope",sans-serif;
+  letter-spacing:.025em;
+  transition:color .2s ease;
+}
+.hero-affiliations a:hover{color:#fff}
+
+/* Stronger small text contrast */
+.credential-row small{color:#5f6d77}
+.footer-brand p,.copyright,.back-top{color:#596873}
+.timeline-content span{color:#a6b7c3}
+.service-item p{color:#a2b2bd}
+.pub-year,.pub-type{color:#5d6b75}
+.publication p{color:#5e6b74}
+.publications-footer p{color:#5d6972}
+
+/* Credential grid */
+.credential-row-v2{
+  grid-template-columns:1fr 1.15fr 1.35fr;
+}
+.credential-row-v2>div{
+  padding-right:20px;
+  border-right:1px solid var(--line);
+}
+.credential-row-v2>div:last-child{
+  border-right:0;
+  padding-right:0;
+}
+
+/* Education summary inside journey */
+.education-grid{
+  margin-top:58px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border:1px solid var(--line-dark);
+}
+.education-grid article{
+  padding:30px;
+  border-right:1px solid var(--line-dark);
+  min-height:190px;
+}
+.education-grid article:last-child{border-right:0}
+.education-grid small{
+  display:block;
+  margin-bottom:13px;
+  color:#78d7cf;
+  font:700 9px/1 "Manrope",sans-serif;
+  letter-spacing:.14em;
+}
+.education-grid h3{
+  color:#fff;
+  font:700 18px/1.3 "Manrope",sans-serif;
+  margin-bottom:10px;
+}
+.education-grid p{
+  color:#a6b7c3;
+  font-size:13px;
+  line-height:1.65;
+}
+
+/* CiTech — major professional pillar */
+.innovation{padding:130px 0}
+.innovation-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:var(--radius);
+  padding:62px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(120,215,207,.16),transparent 28%),
+    linear-gradient(135deg,#07131f,#103047);
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:70px;
+}
+.innovation-card:after{
+  content:"";
+  position:absolute;
+  width:520px;height:520px;border-radius:50%;
+  right:-220px;bottom:-280px;
+  border:1px solid rgba(120,215,207,.12);
+  box-shadow:0 0 0 75px rgba(120,215,207,.025),
+             0 0 0 150px rgba(120,215,207,.018);
+}
+.innovation-copy,.innovation-grid{position:relative;z-index:2}
+.innovation-copy .section-kicker{color:#78d7cf}
+.innovation-copy h2{
+  font:700 clamp(38px,4.5vw,62px)/1.06 "Manrope",sans-serif;
+  letter-spacing:-.045em;
+}
+.innovation-copy h2 em{font-style:normal;color:#78d7cf}
+.innovation-copy>p:not(.section-kicker){
+  margin:24px 0 30px;
+  max-width:590px;
+  color:#a7b7c2;
+  font-size:16px;
+}
+.innovation-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:1px solid rgba(255,255,255,.12);
+  border-left:1px solid rgba(255,255,255,.12);
+}
+.innovation-grid article{
+  padding:27px;
+  min-height:175px;
+  border-right:1px solid rgba(255,255,255,.12);
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.innovation-grid span{
+  display:block;
+  color:#78d7cf;
+  font:800 11px/1 "Manrope",sans-serif;
+  letter-spacing:.12em;
+  margin-bottom:20px;
+}
+.innovation-grid strong{
+  display:block;
+  font:700 15px "Manrope",sans-serif;
+  margin-bottom:9px;
+}
+.innovation-grid p{
+  color:#9fb1bd;
+  font-size:12px;
+  line-height:1.6;
+}
+
+/* Academic profile buttons */
+.profile-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:9px;
+}
+.button-secondary{
+  background:transparent;
+  color:var(--ink);
+  border-color:var(--line);
+}
+.button-secondary:hover{background:var(--ink);color:#fff}
+
+/* Clickable global engagement cards */
+.service-item{
+  position:relative;
+  display:block;
+  transition:background .25s ease,transform .25s ease;
+}
+a.service-item:after{
+  content:"↗";
+  position:absolute;
+  right:28px;top:29px;
+  color:#6d8899;
+  font-size:14px;
+  transition:color .2s ease,transform .2s ease;
+}
+a.service-item:hover{
+  background:#0e2637;
+  transform:translateY(-2px);
+}
+a.service-item:hover:after{
+  color:#78d7cf;
+  transform:translate(2px,-2px);
+}
+
+/* Better mobile menu behavior */
+.menu-overlay{
+  position:fixed;
+  inset:0;
+  z-index:98;
+  background:rgba(0,0,0,.48);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .3s ease;
+}
+.menu-overlay.open{opacity:1;pointer-events:auto}
+body.menu-open{overflow:hidden}
+.mobile-menu[aria-hidden="true"]{pointer-events:none}
+.mobile-menu[aria-hidden="false"]{pointer-events:auto}
+
+/* More room for contact buttons */
+.contact-actions{flex-wrap:wrap}
+
+@media(max-width:1050px){
+  .credential-row-v2{grid-template-columns:1fr}
+  .credential-row-v2>div{
+    padding:0 0 18px;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+  .credential-row-v2>div:last-child{border-bottom:0;padding-bottom:0}
+  .innovation-card{grid-template-columns:1fr;gap:45px}
+  .profile-buttons{justify-content:flex-start}
+}
+
+@media(max-width:760px){
+  .site-header.is-scrolled{height:68px;padding:0 20px}
+  .hero-affiliations{margin-top:8px}
+  .education-grid{grid-template-columns:1fr}
+  .education-grid article{
+    border-right:0;
+    border-bottom:1px solid var(--line-dark);
+    min-height:0;
+  }
+  .education-grid article:last-child{border-bottom:0}
+  .innovation{padding:95px 0}
+  .innovation-card{padding:38px 25px;border-radius:22px}
+  .innovation-grid{grid-template-columns:1fr}
+  .profile-buttons{width:100%}
+  .profile-buttons .button{width:100%}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .site-header,.menu-overlay,.service-item{transition:none!important}
+}
